@@ -1,0 +1,77 @@
+h1,.h1{
+  @include font-size(72);
+  font-weight: 100;
+  font-family: $Yantramanav;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+
+  @include respond(1350){
+    @include font-size(55);
+  }
+  @include respond(1024){
+    @include font-size(35);
+  }
+}
+
+.h1__subheading{
+  @include font-size(17);
+  font-weight: 300;
+}
+
+h2,.h2{
+  @include font-size(36);
+  font-family: $Yantramanav;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+
+  @include respond(1350){
+    @include font-size(32);
+  }
+  @include respond(1024){
+    @include font-size(25);
+  }
+}
+
+h3,.h3{
+  @include font-size(20);
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+
+  @include respond(1350){
+    @include font-size(19);
+  }
+  @include respond(1024){
+    @include font-size(18);
+  }
+}
+
+h4,.h4{
+  @include font-size(18);
+  font-weight: 900;
+
+  @include respond(1024){
+    @include font-size(16);
+  }
+}
+
+h5,.h5{
+  @include font-size(16);
+  font-weight: 600;
+}
+
+p{
+  @include font-size(18);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  letter-spacing: 0;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  @include respond(1024){
+    @include font-size(16);
+    margin-bottom: 1rem;
+  }
+}

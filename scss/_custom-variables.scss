@@ -1,0 +1,31 @@
+$Yantramanav: 'Yantramanav', sans-serif;
+$Serif72: 'Serif72 Beta Rg',sans-serif;
+$Avenir: 'Avenir LT Std', sans-serif;
+$Bebas: 'Bebas Neue', sans-serif;
+$Futura: 'Futura LT', sans-serif;
+
+$baseFontFamily: $Yantramanav;
+$headingFont: $Bebas;
+
+@mixin font-size($size:18) {
+  font-size: $size * 1px;
+  font-size: ($size / $baseFontSize) * 1rem;
+}
+
+$baseFontSize: 18;
+$baseFontSizePixel: $baseFontSize * 1px;
+
+$baseLineHeight: 1.6;
+$baseLetterSpacing: 0.5px;
+$textColor: #666;
+$bodyBackground: #fff;
+
+
+$greyColor: #666666;
+$blueColor: #2faec8;
+$blueTextColor: #1a97b5;
+
+$fontsUrl: "../fonts/";
+$imgUrl: "../img/";
+
+//bootstrap overwrite

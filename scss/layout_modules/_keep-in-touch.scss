@@ -1,0 +1,130 @@
+.subscribe {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 0;
+  .home__title-block {
+    color: #fff;
+    text-align: center;
+    max-width: 765px;
+    @include center();
+    h2{
+      color: #fff;
+    }
+  }
+}
+
+.subscribe__form {
+  .input__wrap {
+    position: relative;
+    max-width: 300px;
+    //height: 50px;
+    @include center();
+    padding-right: 80px;
+    margin-bottom: 1rem;
+  }
+  .form__input {
+
+  }
+
+  .btn__subscribe {
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 28px;
+    text-align: center;
+    background-color: $blueColor;
+    border: none;
+    border-radius: 0;
+    @include transition(0.3s all ease);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten($blueColor, 5%);
+      span{
+
+      }
+      .icon {
+        @include animation(move-on-hover, 0.5);
+        @include animation-timing-function(cubic-bezier(.39, .6, .71, .94));
+      }
+    }
+
+    span{
+      border-radius: 50%;
+      border: 1px solid #fff;
+      padding: 2px 8px;
+      @include transition(0.3s all ease-in-out);
+    }
+    .icon {
+      fill: #fff;
+      @include size(10px, 13px);
+      margin-top: -3px;
+    }
+  }
+
+  .subscribe__agree {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    max-width: 300px;
+    @include center();
+    @include font-size(15);
+
+    @include respond(1024){
+
+    }
+
+    .form__checkbox {
+      background-color: transparent;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      z-index: 2;
+      @include square(15px);
+      &:checked + .checkmark{
+        &:after {
+          display: block;
+        }
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      cursor: pointer;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 4px;
+        top: 1px;
+        width: 7px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    .terms__agreement {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}

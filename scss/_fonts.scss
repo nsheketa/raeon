@@ -1,0 +1,131 @@
+@import "custom-variables";
+
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('#{$fontsUrl}Yantramanav-Thin.eot');
+  src: url('#{$fontsUrl}Yantramanav-Thin.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Yantramanav-Thin.woff2') format('woff2'),
+  url('#{$fontsUrl}Yantramanav-Thin.woff') format('woff'),
+  url('#{$fontsUrl}Yantramanav-Thin.ttf') format('truetype'),
+  url('#{$fontsUrl}Yantramanav-Thin.svg#Yantramanav-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('#{$fontsUrl}Yantramanav-Light.eot');
+  src: url('#{$fontsUrl}Yantramanav-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Yantramanav-Light.woff2') format('woff2'),
+  url('#{$fontsUrl}Yantramanav-Light.woff') format('woff'),
+  url('#{$fontsUrl}Yantramanav-Light.ttf') format('truetype'),
+  url('#{$fontsUrl}Yantramanav-Light.svg#Yantramanav-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('#{$fontsUrl}Yantramanav-Bold.eot');
+  src: url('#{$fontsUrl}Yantramanav-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Yantramanav-Bold.woff2') format('woff2'),
+  url('#{$fontsUrl}Yantramanav-Bold.woff') format('woff'),
+  url('#{$fontsUrl}Yantramanav-Bold.ttf') format('truetype'),
+  url('#{$fontsUrl}Yantramanav-Bold.svg#Yantramanav-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('#{$fontsUrl}Yantramanav-Black.eot');
+  src: url('#{$fontsUrl}Yantramanav-Black.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Yantramanav-Black.woff2') format('woff2'),
+  url('#{$fontsUrl}Yantramanav-Black.woff') format('woff'),
+  url('#{$fontsUrl}Yantramanav-Black.ttf') format('truetype'),
+  url('#{$fontsUrl}Yantramanav-Black.svg#Yantramanav-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Serif72 Beta Rg';
+  src: url('#{$fontsUrl}Serif72Beta-BoldItalic.eot');
+  src: url('#{$fontsUrl}Serif72Beta-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Serif72Beta-BoldItalic.woff2') format('woff2'),
+  url('#{$fontsUrl}Serif72Beta-BoldItalic.woff') format('woff'),
+  url('#{$fontsUrl}Serif72Beta-BoldItalic.ttf') format('truetype'),
+  url('#{$fontsUrl}Serif72Beta-BoldItalic.svg#Serif72Beta-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('#{$fontsUrl}AvenirLTStd-Light.eot');
+  src: url('#{$fontsUrl}AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}AvenirLTStd-Light.woff2') format('woff2'),
+  url('#{$fontsUrl}AvenirLTStd-Light.woff') format('woff'),
+  url('#{$fontsUrl}AvenirLTStd-Light.ttf') format('truetype'),
+  url('#{$fontsUrl}AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('#{$fontsUrl}Avenir-Black.eot');
+  src: url('#{$fontsUrl}Avenir-Black.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Avenir-Black.woff2') format('woff2'),
+  url('#{$fontsUrl}Avenir-Black.woff') format('woff'),
+  url('#{$fontsUrl}Avenir-Black.ttf') format('truetype'),
+  url('#{$fontsUrl}Avenir-Black.svg#Avenir-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('#{$fontsUrl}BebasNeueRegular.eot');
+  src: url('#{$fontsUrl}BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}BebasNeueRegular.woff2') format('woff2'),
+  url('#{$fontsUrl}BebasNeueRegular.woff') format('woff'),
+  url('#{$fontsUrl}BebasNeueRegular.ttf') format('truetype'),
+  url('#{$fontsUrl}BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('#{$fontsUrl}BebasNeueBold.eot');
+  src: url('#{$fontsUrl}BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}BebasNeueBold.woff2') format('woff2'),
+  url('#{$fontsUrl}BebasNeueBold.woff') format('woff'),
+  url('#{$fontsUrl}BebasNeueBold.ttf') format('truetype'),
+  url('#{$fontsUrl}BebasNeueBold.svg#BebasNeueBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('#{$fontsUrl}FuturaLT-Light.eot');
+  src: url('#{$fontsUrl}FuturaLT-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}FuturaLT-Light.woff2') format('woff2'),
+  url('#{$fontsUrl}FuturaLT-Light.woff') format('woff'),
+  url('#{$fontsUrl}FuturaLT-Light.ttf') format('truetype'),
+  url('#{$fontsUrl}FuturaLT-Light.svg#FuturaLT-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+

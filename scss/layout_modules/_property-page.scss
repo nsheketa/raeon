@@ -1,0 +1,561 @@
+.property__intro-wrap {
+  position: relative;
+  background-color: #fafafa;
+  .intro {
+    @include jc-flex-center();
+  }
+  .intro__title-block {
+    text-align: center;
+    //margin-bottom: 0;
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    &:before{
+      display: none;
+    }
+    h1 {
+      font-weight: 600;
+      @include font-size(34);
+      margin-bottom: 0;
+      letter-spacing: 2px;
+    }
+    p {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  @include respond(1024) {
+    .intro__title-block {
+      h1 {
+        @include font-size(20);
+        //margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.intro__map{
+  width: 100%;
+  height: 100%;
+}
+
+.property-form__wrap {
+  //position: absolute;
+  //bottom: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  @include respond(1024) {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.property-form {
+  -webkit-box-shadow: -2px 2px 11px 2px rgba(0, 0, 0, 0.11);
+  box-shadow: -2px 2px 11px 2px rgba(0, 0, 0, 0.11);
+  background-color: #fff;
+
+  @include respond(1024) {
+    box-shadow: none;
+    padding: 0 15px;
+  }
+}
+
+.property-form__inner {
+  @include display-flex();
+  @include ai-flex-center();
+  padding: 20px 90px 20px 0;
+  position: relative;
+
+  @include respond(1024) {
+    padding: 30px 0 30px;
+    @include flex-wrap();
+  }
+}
+
+.property-form__col {
+  padding: 10px 20px 10px 40px;
+  border-right: 1px solid #f2f2f2;
+  &:last-of-type {
+    border: none;
+  }
+  &.sm {
+    width: 20%;
+    max-width: 20%;
+  }
+  &.lg {
+    width: 30%;
+    max-width: 30%;
+  }
+  label, span.label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include font-size(17);
+    color: #000;
+    margin-right: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    border-right: none;
+  }
+
+  .form__select-wrap {
+    p {
+      font-weight: 600;
+    }
+  }
+
+  @include respond(1300) {
+    padding: 10px;
+    .form__input {
+      msx-width: 60px;
+    }
+  }
+
+  @include respond(1024) {
+    border-bottom: 1px solid #f2f2f2;
+    border-right: none;
+    &.sm {
+      width: 49.9%;
+      max-width: 49.9%;
+      display: inline-block;
+      padding: 0 10px 0 0;
+      &:first-of-type {
+        border-right: 1px solid #f2f2f2;
+        .form__select-wrap {
+          padding-left: 0;
+          p {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    &.lg {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 0;
+    }
+  }
+
+  @include respond(400){
+    &.sm {
+      padding: 0 ;
+    }
+    .form__select-wrap {
+      p {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.property-form__col-bedrooms {
+  .form__select-wrap {
+    @include font-size(17);
+    color: #000;
+    padding-bottom: 0px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 1px solid #f2f2f2;
+    width: auto;
+    height: 40px;
+    max-width: 31%;
+    padding-left: 0;
+    vertical-align: middle;
+    p {
+      color: $textColor;
+      font-size: 15px;
+      padding: 10px 0 0 0;
+      font-weight: 300;
+      height: auto;
+    }
+    select {
+      height: 40px;
+    }
+  }
+
+  @include respond(1300) {
+    span.label{
+      margin-right: 5%;
+    }
+  }
+  @include respond(1200) {
+    .form__select-wrap{
+      max-width: 28%;
+      select{
+        padding-left: 2px;
+      }
+    }
+  }
+
+  @include respond(1024) {
+    span.label {
+      width: 13%;
+      margin: 0;
+      text-transform: none;
+      text-align: left;
+    }
+    .form__select-wrap {
+      background-color: #f2f2f2;
+      min-width: 39%;
+      max-width: 39%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      p {
+        background-color: #f2f2f2;
+      }
+      select{
+        padding-left: 13px;
+      }
+    }
+    span {
+      display: inline-block;
+      width: 5%;
+      text-align: center;
+    }
+  }
+  @include respond(500) {
+    span.label {
+      display: block;
+      position: relative;
+      top: auto;
+      margin-bottom: 1rem;
+    }
+    .form__select-wrap {
+      min-width: 46%;
+      max-width: 46%;
+    }
+    span {
+      width: 4%;
+      max-width: 4%;
+    }
+  }
+}
+
+.property-form__col-price {
+  position: relative;
+  display: block;
+  .ui-widget.ui-widget-content {
+    width: 75%;
+    height: 7px;
+    margin-left: auto;
+    background-color: #c6d1cf;
+    border-radius: 7px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    background-color: $blueTextColor;
+  }
+  .ui-slider-horizontal .ui-slider-handle {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    top: -3px;
+  }
+
+  label {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    text-transform: none;
+  }
+  .form__input {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-align: center;
+    height: auto;
+    position: absolute;
+    bottom: -16px;
+    font-family: $baseFontFamily;
+    color: $textColor;
+  }
+
+  @include respond(1300) {
+    label {
+      left: 10px;
+    }
+  }
+
+  @include respond(1024) {
+    .ui-widget.ui-widget-content {
+      width: 84%;
+      margin-top: 11px;
+    }
+    label {
+      top: 22px;
+      width: 13%;
+    }
+    .form__input {
+      position: relative;
+      bottom: auto;
+      width: 100%;
+    }
+  }
+  @include respond(500) {
+    label {
+      display: block;
+      position: relative;
+      top: -20px;
+      left: 0;
+      margin-bottom: 0rem;
+    }
+    .ui-widget.ui-widget-content {
+      position: relative;
+      top: 20px;
+      width: 98%;
+    }
+  }
+}
+
+.property-form__btn-wrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  height: 100%;
+  text-align: center;
+  .button {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+    height: 100%;
+  }
+  .icon {
+    fill: #fff;
+    margin-right: 0;
+    @include square(20px);
+  }
+  span {
+    display: none;
+    text-transform: uppercase;
+    color: #fff;
+    @include font-size(17);
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    .icon {
+      animation: none;
+    }
+  }
+
+  @include respond(1024) {
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    margin: 1.5rem 0;
+    span {
+      display: block;
+    }
+  }
+}
+
+.properties {
+  background-color: #fafafa;
+  padding-top: 120px;
+  @include respond(1024) {
+    padding-top: 50px;
+  }
+}
+
+.properties-title__block {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 885px;
+  @include center();
+  h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+.properties__list-item {
+  margin-bottom: 70px;
+  @include respond(1024) {
+    margin-bottom: 40px;
+  }
+}
+
+.properties__list-img-wrap{
+  position: relative;
+}
+
+.properties__list-img {
+  position: relative;
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+
+.property__list-content-wrap {
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.property__list-title {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f2f2f2;
+  h3 {
+    @include font-size(28);
+    color: #000;
+    font-weight: 100;
+    text-transform: none;
+    margin: 0;
+    a {
+      color: inherit;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      a {
+        color: #000;
+        @include transition(0.3s all ease);
+      }
+    }
+  }
+  h4 {
+    @include font-size(17);
+    text-transform: uppercase;
+    font-weight: 900;
+    a {
+      color: inherit;
+      @include transition(0.3s all ease);
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      a {
+        color: $textColor;
+      }
+    }
+  }
+}
+
+.property__list-content {
+  padding: 20px 0;
+  @include display-flex();
+  text-transform: uppercase;
+
+  @include respond(1024) {
+    text-transform: none;
+  }
+}
+
+.property__list-content_col {
+  width: 50%;
+  max-width: 50%;
+
+  &:last-of-type {
+    text-align: right;
+  }
+  p {
+    color: #767676;
+    @include font-size(14);
+    margin-bottom: 0;
+    line-height: 1.7;
+    b {
+      font-weight: 900;
+    }
+  }
+  span {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    @include font-size(22);
+    line-height: 1;
+  }
+}
+
+
+/*----------PAGINGATION--------*/
+.property__pagination{
+  padding: 0;
+  margin: 1rem 0 1rem 1rem;
+  text-align: right;
+}
+.property__pagination-item{
+  @include font-size(18);
+  color: $textColor;
+  display: inline-block;
+  margin: 0 6px;
+
+  &.is-active{
+    .property__pagination-link{
+      color: $blueTextColor;
+      .icon{
+        fill: $blueTextColor;
+      }
+    }
+  }
+  &.is-inactive{
+    .property__pagination-link{
+      opacity: 0.5;
+      pointer-events: none;
+      .icon{
+        //fill: $blueTextColor;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active{
+    .property__pagination-link{
+      color: $blueTextColor;
+      .icon{
+        fill: $blueTextColor;
+      }
+    }
+    &.is-inactive{
+      .icon{
+        fill: $textColor;
+      }
+    }
+  }
+}
+
+.property__pagination-link{
+  color: $textColor;
+  display: block;
+  @include transition(0.3s all ease);
+  .icon{
+    fill: $textColor;
+    vertical-align: top;
+    margin-top: 4px;
+  }
+}
+
+.sold-out{
+  background: url("#{$imgUrl}property/flag.png")no-repeat center /contain;
+ @include size(110px, 40px);
+  color: #fff;
+  @include font-size(16);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: -6px;
+  font-weight: 600;
+}

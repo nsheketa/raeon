@@ -1,0 +1,258 @@
+.main.contact{
+
+}
+
+.contact__intro{
+  height: 530px;
+  position: relative;
+
+  .container,
+  .row{
+    height: 100%;
+  }
+
+  h1{
+    color: $blueTextColor;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+
+  @include respond(1024){
+    margin-right: 0;
+    height: unset;
+    height: auto;
+    padding: 50px 0 0;
+
+    h1{
+      @include center();
+      br{
+        display: none;
+      }
+    }
+  }
+}
+
+
+.contact__intro-heading{
+  height: 100%;
+  @include display-flex();
+  @include ac-flex-center();
+  @include flex-wrap();
+
+  p{
+    max-width: 64%;
+  }
+
+  @include respond(1024){
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    p{
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+.contact__intro-map-wrap{
+  width: 60%;
+  max-width: 60%;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @include respond(1024){
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    right: auto;
+    top: auto;
+    padding: 0 15px;
+  }
+}
+
+.contact__intro-map{
+  width: 100%;
+  height: 530px;
+  @include respond(1024){
+    height: 400px;
+  }
+}
+
+.contact__locations{
+  @include display-flex();
+
+  @include respond(1024){
+    @include flex-wrap();
+  }
+}
+
+.contact__location-item{
+  width: 20%;
+  max-width: 20%;
+  h4{
+    color: $blueTextColor;
+  }
+
+  @include respond(1024){
+    width: 100%;
+    max-width: 100%;
+    @include display-flex();
+    margin-bottom: 1.5rem;
+
+    h4{
+      width: 30%;
+      max-width: 30%;
+    }
+  }
+}
+
+.contact__location-item-content{
+  p{
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 0rem;
+    line-height: 2;
+    max-width: 60%;
+  }
+
+  @include respond(1200){
+    p{
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+
+  @include respond(1024){
+    width: 70%;
+    max-width: 70%;
+    p{
+      width: 75%;
+      max-width: 100%;
+    }
+  }
+
+  @include respond(480){
+    p{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+}
+
+.contact__location-icon{
+  position: absolute;
+  left: 0;
+  top: 8px;
+  margin-right: 5px;
+  vertical-align: middle;
+  @include size(12px, 12px);
+}
+
+.contact-us{
+
+}
+.contact-us__bg{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 630px;
+  width: 100%;
+  z-index: 0;
+
+  @include respond(1024){
+    height: 400px;
+  }
+}
+
+.contact-form__wrap{
+  z-index: 1;
+  padding: 70px 80px;
+  background-color: #fff;
+  margin-top: -100px;
+
+  @include respond(1024){
+    padding: 50px 0;
+    margin-top: 0;
+  }
+}
+
+.contact__form{
+  position: relative;
+  .input__wrap,.form__select-wrap{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .form__select-wrap{
+    p{
+      background-color: #f2f2f2;
+      text-transform: uppercase;
+      @include font-size(16);
+    }
+    .icon{
+      fill: $textColor;
+      width: 12px;
+      right: 20px;
+    }
+  }
+  .form__input{
+    background-color: #f2f2f2;
+  }
+  .textarea__wrap{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .form__textarea{
+    background-color: #f2f2f2;
+
+  }
+  .btn__wrap{
+    position: absolute;
+    bottom: -7px;
+    right: 20px;
+    text-align: right;
+
+    .button{
+      //background-color: #a1cdda;
+    }
+    .icon{
+      fill:#fff;
+      width: 20px;
+      height: 17px;
+      margin-right: 10px;
+    }
+  }
+
+  @include respond(570){
+    .btn__wrap{
+      position: relative;
+      bottom: auto;
+      right: auto;
+      text-align: center;
+      width: calc(100% - 30px);
+      margin: auto;
+      .button{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contact__form-title{
+  @include respond(1024){
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+
+.contact-page.subscribe{
+  h2{
+    font-family: $Bebas;
+  }
+}

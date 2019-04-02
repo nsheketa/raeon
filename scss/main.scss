@@ -1,0 +1,39 @@
+@import "../modules/bootstrap/scss/bootstrap-grid";
+@import "../modules/bootstrap/scss/variables";
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1200px
+);
+
+@import "../modules/bootstrap/scss/bootstrap";
+@import "../slick/slick";
+
+@import "custom-variables";
+
+@import "fonts";
+
+@import "mixins";
+@import "custom-reset";
+@import "layout_modules/general-layout-styles";
+@import "layout_modules/text-styles";
+@import "layout_modules/header";
+@import "layout_modules/footer";
+@import "layout_modules/homepage";
+@import "layout_modules/keep-in-touch";
+@import "layout_modules/about-company-page";
+@import "layout_modules/about-team-page";
+@import "layout_modules/contact-page";
+@import "layout_modules/news-page";
+@import "layout_modules/blogs-page";
+@import "layout_modules/events-page";
+@import "layout_modules/property-page";
+@import "layout_modules/property-detail-page";
+@import "layout_modules/services-page";
+@import "layout_modules/search-page";
+
+
+
+

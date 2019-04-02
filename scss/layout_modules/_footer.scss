@@ -1,0 +1,313 @@
+.footer {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 90px 0;
+  @include font-size(16);
+
+  @include respond(1023) {
+    padding: 30px 0;
+  }
+}
+
+.footer__info {
+  padding-bottom: 2rem;
+
+  @include respond(1023) {
+    padding-bottom: 0;
+  }
+}
+
+.footer__item {
+
+  @include respond(1023) {
+    padding: 1rem 0px;
+    text-align: center;
+    &:first-of-type {
+      border-bottom: 1px solid #555555;
+      padding: 1rem 15px;
+    }
+  }
+
+  &.footer__item-menu {
+
+    @include respond(1023) {
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+}
+
+.footer__title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  //@include respond(570){
+  //  text-align: center;
+  //}
+
+  &.follow {
+    @include respond(1023) {
+      display: inline-block;
+      vertical-align: text-top;
+      margin-bottom: 0;
+    }
+    @include respond(480){
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.footer__follow {
+  display: block;
+
+  @include respond(1023) {
+    display: inline-block;
+  }
+}
+
+.footer__follow-link {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+
+  @include respond(1200) {
+    margin-right: 9px;
+  }
+
+  @include respond(1023) {
+    margin: 0 10px;
+  }
+  .icon {
+    fill: #fff;
+    @include size(20px, 20px);
+    &.wechat {
+
+    }
+    &.youtube {
+
+    }
+  }
+}
+
+.footer__list {
+  ul {
+    padding: 0;
+    li {
+      list-style-type: disc;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      position: relative;
+      &:before {
+        display: inline-block;
+        content: '';
+        vertical-align: middle;
+        @include square(3px);
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      a {
+        color: #fff;
+        display: block;
+        padding-left: 13px;
+
+        &:hover, &:focus, &:active {
+          color: #fff;
+        }
+      }
+    }
+    @include respond(1023) {
+      li {
+        display: inline-block;
+      }
+    }
+
+  }
+
+  &.property {
+    @include respond(1023) {
+      li {
+        margin-right: 5%;
+      }
+    }
+  }
+  &.nav {
+    li {
+      list-style: none;
+      &:before {
+        display: none;
+      }
+      a {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+    @include respond(1023) {
+      ul {
+        width: 100%;
+      }
+      li {
+        margin-right: 1%;
+      }
+    }
+    @include respond(570){
+      //text-align: center;
+    }
+  }
+  &.office {
+    @include respond(1023) {
+      ul{
+        margin-bottom: 0;
+      }
+      li {
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+.footer-subscribe__form {
+
+  .input__wrap {
+    position: relative;
+    max-width: 300px;
+    height: 30px;
+    padding-right: 45px;
+    margin-bottom: 1rem;
+    @include respond(1023) {
+      @include center();
+    }
+  }
+  .form__input {
+    height: 100%;
+    line-height: 1.5;
+    @include font-size(14);
+    color: #0e0e0e;
+    padding-left: 1rem;
+    @include input-placeholder() {
+      font-size: 12px;
+      color: #000;
+    }
+  }
+  .footer__subscribe {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    line-height: 28px;
+    text-align: center;
+    background-color: $blueColor;
+    border: none;
+    border-radius: 0;
+    @include transition(0.3s all ease);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten($blueColor, 5%);
+    }
+
+    .icon {
+      fill: #fff;
+      @include square(10px);
+    }
+  }
+}
+
+.footer__agree {
+  position: relative;
+  padding: 0 25px;
+  cursor: pointer;
+
+  @include respond(1023) {
+    max-width: 304px;
+    @include center();
+    padding: 0 20px;
+  }
+
+  .form__checkbox {
+    background-color: #535353;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+    @include square(15px);
+    &:checked + .checkmark {
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #555555;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 4px;
+      top: 1px;
+      width: 7px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #555555;
+  width: 100%;
+
+  @include respond(1023) {
+    border-top: none;
+    padding-top: 1.5rem;
+  }
+  @include respond(410) {
+    max-width: 227px;
+    @include center();
+  }
+}
+
+.footer__copyright-links {
+  display: inline-block;
+  line-height: 1;
+  @include respond(1023) {
+    display: block;
+    position: relative;
+    top: -45px;
+  }
+
+  @include respond(410) {
+    top: -65px;
+  }
+  span {
+    &.hide-in-mob {
+      @include respond(1023) {
+        display: none;
+      }
+    }
+  }
+}
